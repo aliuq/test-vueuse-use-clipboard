@@ -1,29 +1,14 @@
 # Nuxt 3 Minimal Starter
 
-We recommend to look at the [documentation](https://v3.nuxtjs.org).
-
-## Setup
-
-Make sure to install the dependencies
-
 ```bash
+# Install dependencies
 yarn install
-```
-
-## Development
-
-Start the development server on http://localhost:3000
-
-```bash
-yarn dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
+# Build
 yarn build
+# Build docker image
+docker build -t test-use-clipboard .
+# Run
+docker run --rm -p 3009:3000 --env HOST=0.0.0.0 test-use-clipboard
+# Delete docker image
+docker rmi test-use-clipboard
 ```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment).
