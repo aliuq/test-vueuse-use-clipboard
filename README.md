@@ -12,3 +12,7 @@ docker run --rm -p 3009:3000 --env HOST=0.0.0.0 test-use-clipboard
 # Delete docker image
 docker rmi test-use-clipboard
 ```
+
+**Node version**   
+local: `v14.17.6`   
+server: `v14.18.1`
